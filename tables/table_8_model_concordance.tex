@@ -1,6 +1,6 @@
 \begin{table}[t]
 \centering
-\caption{Inter-model decision concordance (Cohen's $\kappa$ and raw agreement $P_o$) across normative credit strata. Under unanimous agreement on single-class strata, Cohen's $\kappa$ is mathematically undefined ($0/0$) and reported as NaN rather than 1.0.}
+\caption{Inter-model decision concordance (Cohen's $\kappa$ and raw agreement $P_o$) across normative credit strata.}
 \label{tab:app_concordance}
 \vspace{2pt}
 \scriptsize
@@ -18,6 +18,5 @@
 \texttt{PAR} & Qwen2.5-7B vs. Qwen2.5-72B & $P_o=0.93$, 0.000 & $P_o=0.76$, 0.526 & $\kappa=0.132$ & $\kappa=0.392$ \\
 \texttt{PAR} & Llama-3.1-70B vs. Qwen2.5-72B & $P_o=0.96$, 0.647 & $P_o=0.78$, 0.567 & $\kappa=0.859$ & $\kappa=0.757$ \\
 \bottomrule
-\multicolumn{6}{p{0.96\linewidth}}{\vspace{2pt}\tiny Evaluated via \texttt{analysis/v2/compute\_model\_concordance\_kappa.py} matching canonical decisions across all 1,008 cases ($N=84$ unique profiles $\times 12$ identities). Entries showing $P_o \approx 0.88$ with $\kappa = 0.000$ reflect the base-rate prevalence paradox \citep{feinstein1990high}: within the restricted Clear Approval stratum, unvarying marginal approval forces expected agreement $P_e$ to equal observed agreement $P_o$, producing $\kappa = 0$ despite high observed concordance.}
 \end{tabular}
 \end{table}

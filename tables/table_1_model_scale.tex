@@ -1,22 +1,22 @@
 % Table 1: Model Competence, Single-Agent Baseline, and Scaling Characteristics
 \begin{table}[t]
 \centering
-\caption{Model evaluation matrix and parameter scale tiers evaluated in the FairWatch benchmark. Executions sum to 63,792 total multi-agent pipeline forward passes across all topologies and full factorial permutation sweeps ($N=1,008$ canonical counterfactual loan decisions per arm).}
+\caption{Factorial evaluation matrix across model scales, deliberation topologies, and counterfactual credit profiles ($N=63{,}792$ planned forward passes; $866{,}952$ logged generation attempts).}
 \label{tab:model_scale}
 \vspace{2pt}
-\scriptsize
-\setlength{\tabcolsep}{2.5pt}
+\footnotesize
+\setlength{\tabcolsep}{4.0pt}
 \begin{tabular}{@{}llcccl@{}}
 \toprule
 \textbf{Family} & \textbf{Model Identifier} & \textbf{Params} & \textbf{Quant.} & \textbf{Executions} & \textbf{Topologies Audited} \\
 \midrule
 Meta LLaMA & \texttt{Llama-3.2-3B-Instruct} & 3.2B & AWQ-INT4 & 4,032 & PAR, SEQ Canonical \\
-Meta LLaMA & \texttt{Llama-3.1-8B-Instruct} & 8.0B & AWQ-INT4 & 20,160 & PAR, SEQ, HIER, PEER, Full-24 \\
-Meta LLaMA & \texttt{Llama-3.1-70B-Instruct} & 70.6B & AWQ-INT4 & 8,064 & PAR, SEQ, HIER, PEER \\
+Meta LLaMA & \texttt{Llama-3.1-8B-Instruct} & 8.0B & AWQ-INT4 & 20,160 & PAR, SEQ Canonical, Full-24, HIER, PEER \\
+Meta LLaMA & \texttt{Llama-3.1-70B-Instruct} & 70.6B & AWQ-INT4 & 8,064 & PAR, SEQ Canonical, HIER, PEER \\
 \midrule
 Qwen 2.5 & \texttt{Qwen2.5-3B-Instruct} & 3.1B & AWQ-INT4 & 4,032 & PAR, SEQ Canonical \\
-Qwen 2.5 & \texttt{Qwen2.5-7B-Instruct} & 7.6B & AWQ-INT4 & 14,544 & PAR, SEQ, Full-24 Factorial \\
-Qwen 2.5 & \texttt{Qwen2.5-72B-Instruct} & 72.7B & AWQ-INT4 & 12,960 & PAR, SEQ, HIER, PEER \\
+Qwen 2.5 & \texttt{Qwen2.5-7B-Instruct} & 7.6B & AWQ-INT4 & 14,544 & PAR, SEQ Canonical, Full-24 \\
+Qwen 2.5 & \texttt{Qwen2.5-72B-Instruct} & 72.7B & AWQ-INT4 & 12,960 & PAR, SEQ Canonical, HIER, PEER \\
 \bottomrule
 \end{tabular}
 \end{table}

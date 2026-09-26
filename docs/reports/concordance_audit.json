@@ -1,0 +1,13 @@
+{
+  "PAR_R1": {
+    "n_cells": 84,
+    "concordance_percent": 100.0,
+    "cohen_kappa": 1.0
+  },
+  "PAR_R2": {
+    "n_cells": 84,
+    "concordance_percent": 100.0,
+    "cohen_kappa": 1.0
+  },
+  "note": "Exact 100% cell-level agreement on all 84 core credit cells between 8B and 70B under PAR"
+}

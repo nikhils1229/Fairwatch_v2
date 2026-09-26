@@ -1,9 +1,8 @@
 vllm>=0.4.0
-fschat
-accelerate
-transformers
-aiohttp
-pandas
-tqdm
-pydantic
-autoawq
+torch>=2.1.0
+transformers>=4.40.0
+numpy>=1.24.0
+scipy>=1.10.0
+pandas>=2.0.0
+pydantic>=2.0.0
+jinja2>=3.1.0

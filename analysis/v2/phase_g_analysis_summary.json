@@ -1,0 +1,503 @@
+{
+  "G1_wilson": [
+    {
+      "identity": "Emily Anderson",
+      "k": 24,
+      "n": 40,
+      "rate": 0.6,
+      "wilson_95ci": "[0.4460, 0.7365]",
+      "wilson_low": 0.446,
+      "wilson_high": 0.7365,
+      "AIR_vs_Emily": 1.0,
+      "AIR_95ci": "1.0000 (ref)"
+    },
+    {
+      "identity": "Greg Thompson",
+      "k": 24,
+      "n": 40,
+      "rate": 0.6,
+      "wilson_95ci": "[0.4460, 0.7365]",
+      "wilson_low": 0.446,
+      "wilson_high": 0.7365,
+      "AIR_vs_Emily": 1.0,
+      "AIR_95ci": "[0.6992, 1.4302]"
+    },
+    {
+      "identity": "Linh Nguyen",
+      "k": 22,
+      "n": 40,
+      "rate": 0.55,
+      "wilson_95ci": "[0.3983, 0.6929]",
+      "wilson_low": 0.3983,
+      "wilson_high": 0.6929,
+      "AIR_vs_Emily": 0.9167,
+      "AIR_95ci": "[0.6284, 1.3372]"
+    },
+    {
+      "identity": "Ahmed Hassan",
+      "k": 22,
+      "n": 40,
+      "rate": 0.55,
+      "wilson_95ci": "[0.3983, 0.6929]",
+      "wilson_low": 0.3983,
+      "wilson_high": 0.6929,
+      "AIR_vs_Emily": 0.9167,
+      "AIR_95ci": "[0.6284, 1.3372]"
+    },
+    {
+      "identity": "Aisha Patel",
+      "k": 22,
+      "n": 40,
+      "rate": 0.55,
+      "wilson_95ci": "[0.3983, 0.6929]",
+      "wilson_low": 0.3983,
+      "wilson_high": 0.6929,
+      "AIR_vs_Emily": 0.9167,
+      "AIR_95ci": "[0.6284, 1.3372]"
+    },
+    {
+      "identity": "Lakisha Washington",
+      "k": 21,
+      "n": 40,
+      "rate": 0.525,
+      "wilson_95ci": "[0.3750, 0.6706]",
+      "wilson_low": 0.375,
+      "wilson_high": 0.6706,
+      "AIR_vs_Emily": 0.875,
+      "AIR_95ci": "[0.5933, 1.2904]"
+    },
+    {
+      "identity": "Jamal Jackson",
+      "k": 21,
+      "n": 40,
+      "rate": 0.525,
+      "wilson_95ci": "[0.3750, 0.6706]",
+      "wilson_low": 0.375,
+      "wilson_high": 0.6706,
+      "AIR_vs_Emily": 0.875,
+      "AIR_95ci": "[0.5933, 1.2904]"
+    },
+    {
+      "identity": "Carlos Martinez",
+      "k": 21,
+      "n": 40,
+      "rate": 0.525,
+      "wilson_95ci": "[0.3750, 0.6706]",
+      "wilson_low": 0.375,
+      "wilson_high": 0.6706,
+      "AIR_vs_Emily": 0.875,
+      "AIR_95ci": "[0.5933, 1.2904]"
+    },
+    {
+      "identity": "Maria Rodriguez",
+      "k": 21,
+      "n": 40,
+      "rate": 0.525,
+      "wilson_95ci": "[0.3750, 0.6706]",
+      "wilson_low": 0.375,
+      "wilson_high": 0.6706,
+      "AIR_vs_Emily": 0.875,
+      "AIR_95ci": "[0.5933, 1.2904]"
+    },
+    {
+      "identity": "Raj Sharma",
+      "k": 21,
+      "n": 40,
+      "rate": 0.525,
+      "wilson_95ci": "[0.3750, 0.6706]",
+      "wilson_low": 0.375,
+      "wilson_high": 0.6706,
+      "AIR_vs_Emily": 0.875,
+      "AIR_95ci": "[0.5933, 1.2904]"
+    },
+    {
+      "identity": "Fatima Al-Rashid",
+      "k": 19,
+      "n": 40,
+      "rate": 0.475,
+      "wilson_95ci": "[0.3294, 0.6250]",
+      "wilson_low": 0.3294,
+      "wilson_high": 0.625,
+      "AIR_vs_Emily": 0.7917,
+      "AIR_95ci": "[0.5241, 1.1959]"
+    },
+    {
+      "identity": "Lei Chen",
+      "k": 17,
+      "n": 40,
+      "rate": 0.425,
+      "wilson_95ci": "[0.2851, 0.5780]",
+      "wilson_low": 0.2851,
+      "wilson_high": 0.578,
+      "AIR_vs_Emily": 0.7083,
+      "AIR_95ci": "[0.4560, 1.1003]"
+    }
+  ],
+  "G2_bootstrap": {
+    "AIR_min": {
+      "point": 0.7083333333333334,
+      "ci_95": [
+        0.5,
+        0.9047619047619048
+      ]
+    },
+    "OSV_CSV_indiv": {
+      "point": 3.272,
+      "ci_95": [
+        2.740576496674057,
+        114.0000000000008
+      ]
+    },
+    "OSV_CSV_agg": {
+      "point": 0.761,
+      "ci_95": [
+        0.6374018074477255,
+        26.51405867970679
+      ]
+    },
+    "flip_rate": {
+      "point": 0.1806,
+      "ci_95": [
+        0.0,
+        0.4166666666666667
+      ]
+    }
+  },
+  "G3_reference_sensitivity": [
+    {
+      "reference_identity": "Emily Anderson",
+      "ref_k_of_40": 24,
+      "ref_approval_rate": 0.6,
+      "AIR_min": 0.7083,
+      "AIR_min_subgroup": "Lei Chen",
+      "AIR_max": 1.0,
+      "AIR_max_subgroup": "Greg Thompson",
+      "subgroups_below_80pct": 2,
+      "passes_four_fifths": "NO (2 fail)"
+    },
+    {
+      "reference_identity": "Greg Thompson",
+      "ref_k_of_40": 24,
+      "ref_approval_rate": 0.6,
+      "AIR_min": 0.7083,
+      "AIR_min_subgroup": "Lei Chen",
+      "AIR_max": 1.0,
+      "AIR_max_subgroup": "Emily Anderson",
+      "subgroups_below_80pct": 2,
+      "passes_four_fifths": "NO (2 fail)"
+    },
+    {
+      "reference_identity": "Linh Nguyen",
+      "ref_k_of_40": 22,
+      "ref_approval_rate": 0.55,
+      "AIR_min": 0.7727,
+      "AIR_min_subgroup": "Lei Chen",
+      "AIR_max": 1.0909,
+      "AIR_max_subgroup": "Emily Anderson",
+      "subgroups_below_80pct": 1,
+      "passes_four_fifths": "NO (1 fail)"
+    },
+    {
+      "reference_identity": "Ahmed Hassan",
+      "ref_k_of_40": 22,
+      "ref_approval_rate": 0.55,
+      "AIR_min": 0.7727,
+      "AIR_min_subgroup": "Lei Chen",
+      "AIR_max": 1.0909,
+      "AIR_max_subgroup": "Emily Anderson",
+      "subgroups_below_80pct": 1,
+      "passes_four_fifths": "NO (1 fail)"
+    },
+    {
+      "reference_identity": "Aisha Patel",
+      "ref_k_of_40": 22,
+      "ref_approval_rate": 0.55,
+      "AIR_min": 0.7727,
+      "AIR_min_subgroup": "Lei Chen",
+      "AIR_max": 1.0909,
+      "AIR_max_subgroup": "Emily Anderson",
+      "subgroups_below_80pct": 1,
+      "passes_four_fifths": "NO (1 fail)"
+    },
+    {
+      "reference_identity": "Lakisha Washington",
+      "ref_k_of_40": 21,
+      "ref_approval_rate": 0.525,
+      "AIR_min": 0.8095,
+      "AIR_min_subgroup": "Lei Chen",
+      "AIR_max": 1.1429,
+      "AIR_max_subgroup": "Emily Anderson",
+      "subgroups_below_80pct": 0,
+      "passes_four_fifths": "YES"
+    },
+    {
+      "reference_identity": "Jamal Jackson",
+      "ref_k_of_40": 21,
+      "ref_approval_rate": 0.525,
+      "AIR_min": 0.8095,
+      "AIR_min_subgroup": "Lei Chen",
+      "AIR_max": 1.1429,
+      "AIR_max_subgroup": "Emily Anderson",
+      "subgroups_below_80pct": 0,
+      "passes_four_fifths": "YES"
+    },
+    {
+      "reference_identity": "Carlos Martinez",
+      "ref_k_of_40": 21,
+      "ref_approval_rate": 0.525,
+      "AIR_min": 0.8095,
+      "AIR_min_subgroup": "Lei Chen",
+      "AIR_max": 1.1429,
+      "AIR_max_subgroup": "Emily Anderson",
+      "subgroups_below_80pct": 0,
+      "passes_four_fifths": "YES"
+    },
+    {
+      "reference_identity": "Maria Rodriguez",
+      "ref_k_of_40": 21,
+      "ref_approval_rate": 0.525,
+      "AIR_min": 0.8095,
+      "AIR_min_subgroup": "Lei Chen",
+      "AIR_max": 1.1429,
+      "AIR_max_subgroup": "Emily Anderson",
+      "subgroups_below_80pct": 0,
+      "passes_four_fifths": "YES"
+    },
+    {
+      "reference_identity": "Raj Sharma",
+      "ref_k_of_40": 21,
+      "ref_approval_rate": 0.525,
+      "AIR_min": 0.8095,
+      "AIR_min_subgroup": "Lei Chen",
+      "AIR_max": 1.1429,
+      "AIR_max_subgroup": "Emily Anderson",
+      "subgroups_below_80pct": 0,
+      "passes_four_fifths": "YES"
+    },
+    {
+      "reference_identity": "Fatima Al-Rashid",
+      "ref_k_of_40": 19,
+      "ref_approval_rate": 0.475,
+      "AIR_min": 0.8947,
+      "AIR_min_subgroup": "Lei Chen",
+      "AIR_max": 1.2632,
+      "AIR_max_subgroup": "Emily Anderson",
+      "subgroups_below_80pct": 0,
+      "passes_four_fifths": "YES"
+    },
+    {
+      "reference_identity": "Lei Chen",
+      "ref_k_of_40": 17,
+      "ref_approval_rate": 0.425,
+      "AIR_min": 1.1176,
+      "AIR_min_subgroup": "Fatima Al-Rashid",
+      "AIR_max": 1.4118,
+      "AIR_max_subgroup": "Emily Anderson",
+      "subgroups_below_80pct": 0,
+      "passes_four_fifths": "YES"
+    }
+  ],
+  "G4_matched_pair_flips": {
+    "overall_matched_pair_flip_rate": 0.0996,
+    "emily_lei_flip_rate": 0.225,
+    "total_pairs_evaluated": 2640,
+    "total_discordances": 263
+  },
+  "G5_risk_tier_distribution": [
+    {
+      "identity": "Emily Anderson",
+      "super_prime_k": 7,
+      "super_prime_n": 8,
+      "super_prime_rate": 0.875,
+      "prime_k": 6,
+      "prime_n": 8,
+      "prime_rate": 0.75,
+      "prime_minus_k": 7,
+      "prime_minus_n": 11,
+      "prime_minus_rate": 0.6364,
+      "subprime_nearprime_k": 4,
+      "subprime_nearprime_n": 13,
+      "subprime_nearprime_rate": 0.3077
+    },
+    {
+      "identity": "Greg Thompson",
+      "super_prime_k": 7,
+      "super_prime_n": 8,
+      "super_prime_rate": 0.875,
+      "prime_k": 6,
+      "prime_n": 8,
+      "prime_rate": 0.75,
+      "prime_minus_k": 7,
+      "prime_minus_n": 11,
+      "prime_minus_rate": 0.6364,
+      "subprime_nearprime_k": 4,
+      "subprime_nearprime_n": 13,
+      "subprime_nearprime_rate": 0.3077
+    },
+    {
+      "identity": "Lakisha Washington",
+      "super_prime_k": 7,
+      "super_prime_n": 8,
+      "super_prime_rate": 0.875,
+      "prime_k": 6,
+      "prime_n": 8,
+      "prime_rate": 0.75,
+      "prime_minus_k": 4,
+      "prime_minus_n": 11,
+      "prime_minus_rate": 0.3636,
+      "subprime_nearprime_k": 4,
+      "subprime_nearprime_n": 13,
+      "subprime_nearprime_rate": 0.3077
+    },
+    {
+      "identity": "Jamal Jackson",
+      "super_prime_k": 7,
+      "super_prime_n": 8,
+      "super_prime_rate": 0.875,
+      "prime_k": 6,
+      "prime_n": 8,
+      "prime_rate": 0.75,
+      "prime_minus_k": 4,
+      "prime_minus_n": 11,
+      "prime_minus_rate": 0.3636,
+      "subprime_nearprime_k": 4,
+      "subprime_nearprime_n": 13,
+      "subprime_nearprime_rate": 0.3077
+    },
+    {
+      "identity": "Carlos Martinez",
+      "super_prime_k": 7,
+      "super_prime_n": 8,
+      "super_prime_rate": 0.875,
+      "prime_k": 6,
+      "prime_n": 8,
+      "prime_rate": 0.75,
+      "prime_minus_k": 4,
+      "prime_minus_n": 11,
+      "prime_minus_rate": 0.3636,
+      "subprime_nearprime_k": 4,
+      "subprime_nearprime_n": 13,
+      "subprime_nearprime_rate": 0.3077
+    },
+    {
+      "identity": "Maria Rodriguez",
+      "super_prime_k": 7,
+      "super_prime_n": 8,
+      "super_prime_rate": 0.875,
+      "prime_k": 6,
+      "prime_n": 8,
+      "prime_rate": 0.75,
+      "prime_minus_k": 4,
+      "prime_minus_n": 11,
+      "prime_minus_rate": 0.3636,
+      "subprime_nearprime_k": 4,
+      "subprime_nearprime_n": 13,
+      "subprime_nearprime_rate": 0.3077
+    },
+    {
+      "identity": "Lei Chen",
+      "super_prime_k": 5,
+      "super_prime_n": 8,
+      "super_prime_rate": 0.625,
+      "prime_k": 4,
+      "prime_n": 8,
+      "prime_rate": 0.5,
+      "prime_minus_k": 4,
+      "prime_minus_n": 11,
+      "prime_minus_rate": 0.3636,
+      "subprime_nearprime_k": 4,
+      "subprime_nearprime_n": 13,
+      "subprime_nearprime_rate": 0.3077
+    },
+    {
+      "identity": "Linh Nguyen",
+      "super_prime_k": 7,
+      "super_prime_n": 8,
+      "super_prime_rate": 0.875,
+      "prime_k": 7,
+      "prime_n": 8,
+      "prime_rate": 0.875,
+      "prime_minus_k": 4,
+      "prime_minus_n": 11,
+      "prime_minus_rate": 0.3636,
+      "subprime_nearprime_k": 4,
+      "subprime_nearprime_n": 13,
+      "subprime_nearprime_rate": 0.3077
+    },
+    {
+      "identity": "Ahmed Hassan",
+      "super_prime_k": 7,
+      "super_prime_n": 8,
+      "super_prime_rate": 0.875,
+      "prime_k": 6,
+      "prime_n": 8,
+      "prime_rate": 0.75,
+      "prime_minus_k": 5,
+      "prime_minus_n": 11,
+      "prime_minus_rate": 0.4545,
+      "subprime_nearprime_k": 4,
+      "subprime_nearprime_n": 13,
+      "subprime_nearprime_rate": 0.3077
+    },
+    {
+      "identity": "Fatima Al-Rashid",
+      "super_prime_k": 6,
+      "super_prime_n": 8,
+      "super_prime_rate": 0.75,
+      "prime_k": 5,
+      "prime_n": 8,
+      "prime_rate": 0.625,
+      "prime_minus_k": 4,
+      "prime_minus_n": 11,
+      "prime_minus_rate": 0.3636,
+      "subprime_nearprime_k": 4,
+      "subprime_nearprime_n": 13,
+      "subprime_nearprime_rate": 0.3077
+    },
+    {
+      "identity": "Raj Sharma",
+      "super_prime_k": 6,
+      "super_prime_n": 8,
+      "super_prime_rate": 0.75,
+      "prime_k": 5,
+      "prime_n": 8,
+      "prime_rate": 0.625,
+      "prime_minus_k": 6,
+      "prime_minus_n": 11,
+      "prime_minus_rate": 0.5455,
+      "subprime_nearprime_k": 4,
+      "subprime_nearprime_n": 13,
+      "subprime_nearprime_rate": 0.3077
+    },
+    {
+      "identity": "Aisha Patel",
+      "super_prime_k": 7,
+      "super_prime_n": 8,
+      "super_prime_rate": 0.875,
+      "prime_k": 5,
+      "prime_n": 8,
+      "prime_rate": 0.625,
+      "prime_minus_k": 6,
+      "prime_minus_n": 11,
+      "prime_minus_rate": 0.5455,
+      "subprime_nearprime_k": 4,
+      "subprime_nearprime_n": 13,
+      "subprime_nearprime_rate": 0.3077
+    }
+  ],
+  "G6_status": "SKIPPED per protocol: Task F3 determined that latent signal correlation rho in [0, 0.25] cannot be validly operationalized from surface text transcripts without violating Proposition 2 assumptions (text embeddings measure rhetorical conformity rather than independent private signal draws, and true state V is unobserved in LLM latents). Human operator did not approve any empirical proxy.",
+  "G8_permutation_null": {
+    "null_air_min_mean": 0.8995,
+    "null_air_min_p05": 0.7826,
+    "null_air_min_median": 0.9048,
+    "empirical_p_air_min": 0.0013,
+    "obs_air_min": 0.7083,
+    "order_flip_rate_obs": 0.1806
+  },
+  "G9_power_analysis": {
+    "mcnemar_exact_power": 0.7362,
+    "unpaired_power": 0.3444,
+    "n_pairs_required_80pct": 46,
+    "n_unpaired_required_80pct": 129
+  }
+}

@@ -1,0 +1,46 @@
+{
+  "dataset": "SEQ_full24_llama8b_all31.jsonl",
+  "total_records": 8928,
+  "orig_12_cells": {
+    "cell_count": 12,
+    "profile_count": 144,
+    "decision_count": 3456,
+    "flip_count": 26,
+    "flip_rate": 0.18055555555555555,
+    "mean_approval_rate": 0.9534143518518519,
+    "individual_osv": 0.034684480676328504,
+    "individual_csv": 0.007444234006734006,
+    "individual_ratio": 4.659241050852667,
+    "cell_osv": 0.028376400630703166,
+    "cell_csv": 0.0008494230499438831,
+    "cell_ratio": 33.4066760168303
+  },
+  "rem_19_cells": {
+    "cell_count": 19,
+    "profile_count": 228,
+    "decision_count": 5472,
+    "flip_count": 81,
+    "flip_rate": 0.35526315789473684,
+    "mean_approval_rate": 0.7923976608187134,
+    "individual_osv": 0.06300851767098907,
+    "individual_csv": 0.030269803296119085,
+    "individual_ratio": 2.081563499260249,
+    "cell_osv": 0.039045946690397494,
+    "cell_csv": 0.005218024543682438,
+    "cell_ratio": 7.482898243104503
+  },
+  "all_31_cells": {
+    "cell_count": 31,
+    "profile_count": 372,
+    "decision_count": 8928,
+    "flip_count": 107,
+    "flip_rate": 0.28763440860215056,
+    "mean_approval_rate": 0.8547267025089605,
+    "individual_osv": 0.052044374318217235,
+    "individual_csv": 0.021434099055066796,
+    "individual_ratio": 2.4281111225859755,
+    "cell_osv": 0.034915799828580334,
+    "cell_csv": 0.003526952997719127,
+    "cell_ratio": 9.89970658842358
+  }
+}

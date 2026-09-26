@@ -1,0 +1,8 @@
+__pycache__/
+*.py[cod]
+*$py.class
+*.log
+.venv/
+.venv_fw/
+results/v2/**
+!results/v2/summary_metrics.json

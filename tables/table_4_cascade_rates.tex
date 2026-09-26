@@ -1,0 +1,28 @@
+% Table 4: Informational Cascade Transition Dynamics (De-confounded Private Signal Abandonment)
+\begin{table}[t]
+\centering
+\caption{Informational cascade transition rates under Sequential Deliberation (SEQ topology only) across sequence positions $k \in \{2, 3, 4\}$ ($N=1,008$ per position). Overturns indicate private signal abandonment relative to uninfluenced solo baselines.}
+\label{tab:cascade_rates}
+\vspace{2pt}
+\scriptsize
+\setlength{\tabcolsep}{3.5pt}
+\begin{tabular}{@{}llcccc@{}}
+\toprule
+& & \multicolumn{2}{c}{\textbf{Llama-3.1-8B-Instruct}} & \multicolumn{2}{c}{\textbf{Qwen-2.5-72B-Instruct}} \\
+\cmidrule(lr){3-4} \cmidrule(lr){5-6}
+\textbf{Sequence Position} & \textbf{Upstream Alignment State} & \textbf{Overturn / $N$} & \textbf{Rate} & \textbf{Overturn / $N$} & \textbf{Rate} \\
+\midrule
+Position 2 (Second Agent) & Upstream Opposes (Agree = 0) & 118 / 118 & \textbf{100.0\%} & 274 / 274 & \textbf{100.0\%} \\
+Position 2 (Second Agent) & Upstream Agrees (Agree = 1)  & 3 / 890   & \textbf{0.3\%}  & 0 / 734   & \textbf{0.0\%} \\
+\midrule
+Position 3 (Third Agent)  & Upstream Unanimous Opposition & 158 / 158 & \textbf{100.0\%} & 173 / 173 & \textbf{100.0\%} \\
+Position 3 (Third Agent)  & Upstream Split (Agree = 1)$^\dagger$ & 0 / 3 & 0.0\% & N/A & N/A \\
+Position 3 (Third Agent)  & Upstream Unanimous Agreement  & 0 / 847   & \textbf{0.0\%}  & 0 / 835   & \textbf{0.0\%} \\
+\midrule
+Position 4 (Terminal Agent) & Upstream Unanimous Opposition & 116 / 120 & \textbf{96.7\%} & 127 / 127 & \textbf{100.0\%} \\
+Position 4 (Terminal Agent) & Upstream Split (Agree = 1--2)$^\dagger$ & 1 / 3 & 33.3\% (n=3, noise) & N/A & N/A \\
+Position 4 (Terminal Agent) & Upstream Unanimous Agreement  & 1 / 885   & \textbf{0.1\%}  & 0 / 881   & \textbf{0.0\%} \\
+\bottomrule
+\multicolumn{6}{p{0.96\linewidth}}{\vspace{2pt}\tiny All transition dynamics are computed by matching each sequential agent decision against that specific persona's isolated solo baseline on applicant profile and identity. Overturn indicates that the agent reversed its uninfluenced solo determination under peer influence. All 100.0\% overturn rates have 95\% Wilson score lower bounds exceeding 96.8\%; the 96.7\% terminal overturn rate has 95\% CI [91.7\%, 98.7\%]. $^\dagger$Under balanced experimental design, upstream split decisions occur in only 3 cases for 8B and 0 cases for 72B; reported for completeness.}
+\end{tabular}
+\end{table}

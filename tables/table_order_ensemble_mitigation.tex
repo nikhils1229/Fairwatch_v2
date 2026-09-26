@@ -1,0 +1,22 @@
+\begin{table}[t]
+\centering
+\caption{Permutation Order-Ensembling as an Algorithmic Governance Defense. Majority consensus over $K$ independent sequence orderings on borderline credit profiles ($N=144$).}
+\label{tab:order_ensemble_mitigation}
+\vspace{2pt}
+\scriptsize
+\setlength{\tabcolsep}{4.5pt}
+\begin{tabular}{@{}cccccc@{}}
+\toprule
+\textbf{Ensemble Size ($K$)} & \textbf{Borderline Flip Rate} & \textbf{Overall Flip Rate} & $\mathbf{\text{Var}(Y_K)/\text{Var}(Y_1)}$ & \textbf{Analytical Bound}$^\dagger$ & \textbf{Stabilized Profiles} \\
+\midrule
+$K = 1$ & 27.0\% & 6.74\% & 1.000 & 1.000 & 0/26 \\
+$K = 3$ & 18.9\% & 4.73\% & 0.701 & 0.304 & 2/26 \\
+$K = 5$ & 13.2\% & 3.29\% & 0.491 & 0.165 & 3/26 \\
+$K = 7$ & 8.8\% & 2.21\% & 0.328 & 0.106 & 3/26 \\
+$K = 9$ & 5.6\% & 1.40\% & 0.207 & 0.072 & 3/26 \\
+$K = 11$ & 3.4\% & 0.84\% & 0.123 & 0.051 & 15/26 \\
+$K = 24^\ddagger$ & 0.0\% & 0.00\% & 0.000 & 0.000 & 26/26 \\
+\bottomrule
+\multicolumn{6}{p{0.96\linewidth}}{\vspace{2pt}\tiny $^\dagger$The analytical bound reports the finite population correction factor for sampling without replacement from $N=24$ permutations: $\frac{N-K}{N-1}\frac{1}{K}$. This formula is a continuous asymptotic reference limit, not an exact finite-sample bound for discrete majority voting. $^\ddagger K=24$ is a full-factorial ceiling benchmark (a deterministic function of all 24 orderings) that completely stabilizes all 26 order-sensitive profiles; $K=5$ represents the practical low-overhead stochastic mitigation.}
+\end{tabular}
+\end{table}

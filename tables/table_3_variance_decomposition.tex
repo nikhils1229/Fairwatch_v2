@@ -1,0 +1,18 @@
+% Table 2: Order-Specific Variance (OSV) vs Context-Specific Variance (CSV)
+\begin{table}[t]
+\centering
+\caption{Order-Specific Variance (OSV) versus Context-Specific Variance (CSV) across agent order permutations (\texttt{Llama-3.1-8B}). Canonical sequence: Risk Manager $\to$ Regulatory Compliance $\to$ Credit Data Science $\to$ Consumer Advocate.}
+\label{tab:variance_decomposition}
+\vspace{2pt}
+\footnotesize
+\setlength{\tabcolsep}{3.5pt}
+\begin{tabular}{@{}llccccc@{}}
+\toprule
+\textbf{Permutation Design} & \textbf{Scope} & \textbf{$N$} & \textbf{Decisions} & \textbf{OSV} ($\sigma^2_{\text{order}}$) & \textbf{CSV} ($\sigma^2_{\text{case}}$) & \textbf{Ratio ($\frac{\text{OSV}}{\text{CSV}}$)} \\
+\midrule
+\textbf{Reduced-12 (Balanced)} & Full Core & 84 & 12,096 & 0.0509 & 0.0930 & \textbf{0.547}$^\dagger$ \\
+\textbf{Full-24 Permutations ($4!$)} & Borderline & 12 & 3,456 & \textbf{0.03403} & \textbf{0.01040} & \textbf{3.272}$^\ddagger$ \\
+\bottomrule
+\multicolumn{7}{p{0.98\linewidth}}{\vspace{2pt}\tiny $^\dagger$On the full 84-profile core benchmark, credit signals dominate across clear-cut strata. $^\ddagger$On the 12 borderline profiles, when evaluating individual decisions across 288 executions per context, within-context ordering variance is $\text{OSV} = 0.03403$ against cross-context variance $\text{CSV} = 0.01040$ ($\text{OSV}/\text{CSV} = 3.272$). On aggregated cell demographic proportions $\hat{Y}(c,\pi)$ (Eq.~2 in Section~3.5), $\text{OSV} = 0.02719$ and $\text{CSV} = 0.03573$ (ratio $0.761$), reflecting that ordering flips concentrate in 3 of the 12 borderline contexts ($26/144$ profiles). We report the individual-decision ratio ($3.272$) as the headline figure because it uses the full 3,456-decision sample; neither ratio alone certifies stability (Section~6).}
+\end{tabular}
+\end{table}

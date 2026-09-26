@@ -1,0 +1,17 @@
+\begin{table}[t]
+\centering
+\caption{Reference-group sensitivity (G3), matched-pair individual fairness (G4), and permutation-null noise floor (G8) for HIER R2 (\texttt{Llama-3.1-70B}, $N=40$ matched profiles).}
+\label{tab:hier_sensitivity}
+\vspace{2pt}
+\scriptsize
+\setlength{\tabcolsep}{3.5pt}
+\begin{tabular}{@{}p{0.26\linewidth}p{0.71\linewidth}@{}}
+\toprule
+\textbf{Analysis} & \textbf{Result} \\
+\midrule
+G3: Reference-group sensitivity & $6$ of $12$ candidate reference groups yield $\text{AIR}_{\min} \ge 0.800$ (6 Four-Fifths failures); reference $=$ \{Lakisha, Jamal, Carlos, Maria, Raj\} ($k=21$) gives $\text{AIR}_{\min} = 0.8095$ (all pass). \\
+G4: Matched-pair individual fairness & Overall pairwise discordance $9.96\%$ ($263/2{,}640$ pairs, $\binom{12}{2}=66$ identity pairs $\times$ 40 contexts); Emily vs.\ Lei Chen discordance $22.5\%$ ($9/40$). \\
+G8: Permutation-null noise floor & Permutation-null mean $\text{AIR}_{\min} = 0.8995$ (5th pct.\ $0.7826$, median $0.9048$); observed $\text{AIR}_{\min}=0.7083$ is statistically significant (empirical $p = 0.0013$). \\
+\bottomrule
+\end{tabular}
+\end{table}

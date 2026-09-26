@@ -1,0 +1,27 @@
+\begin{table}[t]
+\centering
+\caption{Single-Agent Solo Persona Fairness Baselines across Model Scales and Underwriter Personas (Full 84-Cell Core Benchmark). $\text{AIR}_{\min} \in [0.938, 0.986]$ benchmark-wide; $[0.951, 0.987]$ on the 40 pinned cells.}
+\label{tab:solo_persona_fairness}
+\vspace{2pt}
+\scriptsize
+\setlength{\tabcolsep}{3.5pt}
+\begin{tabular}{@{}llccccc@{}}
+\toprule
+\textbf{Model} & \textbf{Specialist Persona} & \textbf{Approval Rate} & \textbf{Black AIR} & \textbf{Hispanic AIR} & \textbf{Asian AIR} & $\mathbf{AIR_{\min}}$ \\
+\midrule
+\multicolumn{7}{l}{\textbf{llama8b}} \\
+ & Regulatory Compliance & 81.0\% & 1.022 & 1.029 & 1.017 & 1.017 \\
+ & Risk Management & 77.4\% & 1.015 & 1.000 & 1.044 & 1.000 \\
+ & Consumer Advocate & 78.0\% & 1.061 & 1.069 & 1.046 & 1.046 \\
+ & Credit Analyst & 92.3\% & 1.026 & 1.032 & 1.032 & 1.026 \\
+ & Solo Majority Ensemble & 78.0\% & 1.053 & 1.046 & 1.036 & 1.036 \\
+\midrule
+\multicolumn{7}{l}{\textbf{llama70b}} \\
+ & Credit Analyst & 83.3\% & 0.986 & 0.993 & 1.002 & 0.986 \\
+ & Risk Management & 57.1\% & 1.010 & 1.000 & 0.990 & 0.990 \\
+ & Regulatory Compliance & 70.8\% & 1.000 & 1.000 & 0.978 & 0.978 \\
+ & Consumer Advocate & 41.7\% & 1.000 & 1.000 & 0.938 & 0.938 \\
+ & Solo Majority Ensemble & 60.7\% & 1.000 & 1.000 & 0.974 & 0.974 \\
+\bottomrule
+\end{tabular}
+\end{table}

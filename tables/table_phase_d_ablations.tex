@@ -1,0 +1,56 @@
+% Table: Phase D Ablations -- Solo Judge, Framing/Masking, and Decoding Stability
+\begin{table}[t]
+\centering
+\caption{Empirical ablations isolating interaction pathologies across solo baselines, message masking, deliberative framing, and decoding stability.}
+\label{tab:phase_d_ablations}
+\vspace{2pt}
+\scriptsize
+\setlength{\tabcolsep}{2.5pt}
+\resizebox{\linewidth}{!}{\begin{tabular}{@{}llccp{3.5cm}@{}}
+\toprule
+\multicolumn{5}{@{}l}{\textbf{Panel A: Solo Executive Judge Baseline (D3, $N=144$ per sub-arm)}} \\
+\midrule
+\textbf{Model} & \textbf{Sub-arm} & $\text{AIR}_{\min}$ & \textbf{Status} & \textbf{McNemar vs.\ HIER R2} \\
+\midrule
+\texttt{Llama-70B} & Verbatim & 1.0000 & Pass & N/A \\
+\texttt{Llama-70B} & Adapted  & 1.1111 & Pass & $b{=}0, c{=}14$, $p{=}1.2{\times}10^{-4}$ \\
+\texttt{Qwen-72B}  & Verbatim & 1.0000 & Pass & N/A \\
+\texttt{Qwen-72B}  & Adapted  & 1.2000 & Pass & $b{=}3, c{=}1$, $p{=}0.625$ \\
+\midrule
+\multicolumn{5}{@{}l}{\textbf{Panel B: Sequence Position Ablation (\texttt{Llama-3.1-8B}, $N=1{,}008$ per position)}} \\
+\midrule
+\textbf{Position / Persona} & \textbf{Condition} & \textbf{Abandonment Rate} & \textbf{95\% CI} & \textbf{Baseline (Canonical SEQ)} \\
+\midrule
+Pos 2 (Regulatory) & \textsc{verdict\_masked} & 0.8\% (1/118) & [0.1\%, 4.6\%] & 100.0\% (118/118) \\
+Pos 2 (Regulatory) & \textsc{rationale\_compressed} & 10.2\% (12/118) & [5.9\%, 16.9\%] & 100.0\% (118/118) \\
+Pos 2 (Regulatory) & \textsc{neutral\_peer\_framing} & 77.1\% (91/118) & [68.8\%, 83.8\%] & 100.0\% (118/118) \\
+\midrule
+Pos 3 (Data Science) & \textsc{verdict\_masked} & 53.8\% (85/158) & [46.0\%, 61.4\%] & 100.0\% (158/158) \\
+Pos 3 (Data Science) & \textsc{rationale\_compressed} & 60.1\% (95/158) & [52.3\%, 67.4\%] & 100.0\% (158/158) \\
+Pos 3 (Data Science) & \textsc{neutral\_peer\_framing} & 100.0\% (158/158) & [97.6\%, 100.0\%] & 100.0\% (158/158) \\
+\midrule
+Pos 4 (Advocate) & \textsc{verdict\_masked} & 54.2\% (65/120) & [45.3\%, 62.8\%] & 96.7\% (116/120) \\
+Pos 4 (Advocate) & \textsc{rationale\_compressed} & 53.3\% (64/120) & [44.4\%, 62.0\%] & 96.7\% (116/120) \\
+Pos 4 (Advocate) & \textsc{neutral\_peer\_framing} & 92.5\% (111/120) & [86.4\%, 96.0\%] & 96.7\% (116/120) \\
+\midrule
+\multicolumn{5}{@{}l}{\textbf{Panel C: Borderline Cascade Framing and Upstream Masking ($N=144$ per condition)}} \\
+\midrule
+\textbf{Model} & \textbf{Condition} & \textbf{Match Rate} & \textbf{95\% CI} & \textbf{Omnibus Test} \\
+\midrule
+\texttt{Qwen-72B} & Canonical (Institutional) & 98.6\% (142/144) & [95.1\%, 99.6\%] & $Q=32.00$, $p=1.13\times10^{-7}$ \\
+\texttt{Qwen-72B} & Neutral Peer Framing & 95.8\% (138/144) & [91.2\%, 98.1\%] & \\
+\texttt{Qwen-72B} & Upstream Verdict Masked & 81.9\% (118/144) & [74.9\%, 87.4\%] & Canonical vs.\ Masked $p_{\text{adj}}=1.94\times10^{-5}$ \\
+\midrule
+\texttt{Llama-70B} & Canonical & 67.4\% (97/144) & [59.3\%, 74.5\%] & $Q=0.1026$, $p=0.950$ \\
+\texttt{Llama-70B} & Neutral & 68.8\% (99/144) & [60.8\%, 75.8\%] & \\
+\texttt{Llama-70B} & Upstream Verdict Masked & 68.8\% (99/144) & [60.8\%, 75.8\%] & \\
+\midrule
+\multicolumn{5}{@{}l}{\textbf{Panel D: Stochastic Decoding Stability (D2b, $N=864$ decisions, 3 seeds $\times$ 2 temperatures)}} \\
+\midrule
+\textbf{Model} & \textbf{Temperature} & \textbf{Match Rate} & \textbf{Seeds} & \\
+\midrule
+\texttt{Qwen-72B} & $T=0.20$ & $142/144$ ($98.6\% \pm 0.0\%$) & 20260911, 20260912, 20260913 & \\
+\texttt{Qwen-72B} & $T=0.70$ & $142/144$ ($98.6\% \pm 0.0\%$) & 20260911, 20260912, 20260913 & \\
+\bottomrule
+\end{tabular}}
+\end{table}

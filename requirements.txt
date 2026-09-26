@@ -1,0 +1,9 @@
+vllm>=0.4.0
+fschat
+accelerate
+transformers
+aiohttp
+pandas
+tqdm
+pydantic
+autoawq

@@ -1,0 +1,23 @@
+\begin{table}[t]
+\centering
+\caption{Inter-model decision concordance (Cohen's $\kappa$ and raw agreement $P_o$) across normative credit strata. Under unanimous agreement on single-class strata, Cohen's $\kappa$ is mathematically undefined ($0/0$) and reported as NaN rather than 1.0.}
+\label{tab:app_concordance}
+\vspace{2pt}
+\scriptsize
+\setlength{\tabcolsep}{4pt}
+\begin{tabular}{@{}llcccc@{}}
+\toprule
+\textbf{Topology} & \textbf{Model Pair} & \textbf{Clear Approval} & \textbf{Clear Rejection} & \textbf{Borderline} & \textbf{Overall $\kappa$} \\
+\midrule
+\texttt{SEQ} & Llama-3.2-3B vs. Llama-3.1-8B & $P_o=1.00$, NaN (Unanimous) & $P_o=0.72$, 0.407 & $\kappa=0.163$ & $\kappa=0.412$ \\
+\texttt{SEQ} & Llama-3.1-8B vs. Llama-3.1-70B & $P_o=0.88$, 0.000 & $P_o=0.75$, 0.533 & $\kappa=0.462$ & $\kappa=0.519$ \\
+\texttt{SEQ} & Qwen2.5-7B vs. Qwen2.5-72B & $P_o=0.88$, 0.000 & $P_o=0.72$, 0.452 & $\kappa=0.023$ & $\kappa=0.281$ \\
+\texttt{SEQ} & Llama-3.1-70B vs. Qwen2.5-72B & $P_o=1.00$, 0.984 & $P_o=0.80$, 0.588 & $\kappa=0.930$ & $\kappa=0.829$ \\
+\texttt{PAR} & Llama-3.2-3B vs. Llama-3.1-8B & $P_o=1.00$, NaN (Unanimous) & $P_o=0.76$, 0.513 & $\kappa=0.587$ & $\kappa=0.630$ \\
+\texttt{PAR} & Llama-3.1-8B vs. Llama-3.1-70B & $P_o=0.95$, 0.000 & $P_o=0.76$, 0.539 & $\kappa=0.273$ & $\kappa=0.483$ \\
+\texttt{PAR} & Qwen2.5-7B vs. Qwen2.5-72B & $P_o=0.93$, 0.000 & $P_o=0.76$, 0.526 & $\kappa=0.132$ & $\kappa=0.392$ \\
+\texttt{PAR} & Llama-3.1-70B vs. Qwen2.5-72B & $P_o=0.96$, 0.647 & $P_o=0.78$, 0.567 & $\kappa=0.859$ & $\kappa=0.757$ \\
+\bottomrule
+\multicolumn{6}{p{0.96\linewidth}}{\vspace{2pt}\tiny Evaluated via \texttt{analysis/v2/compute\_model\_concordance\_kappa.py} matching canonical decisions across all 1,008 cases ($N=84$ unique profiles $\times 12$ identities). Entries showing $P_o \approx 0.88$ with $\kappa = 0.000$ reflect the base-rate prevalence paradox \citep{feinstein1990high}: within the restricted Clear Approval stratum, unvarying marginal approval forces expected agreement $P_e$ to equal observed agreement $P_o$, producing $\kappa = 0$ despite high observed concordance.}
+\end{tabular}
+\end{table}
